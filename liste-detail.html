@@ -2,28 +2,24 @@
 <head>
     <style type="text/css">
         div {
-            border: solid black 10px;
+            border: solid 5px;
             display: inline-block;
             padding: 10px;
-            margin: 10px;
+            margin: 1px;
             font-size: 1.3em;
             border-radius: 10px;
             border-style: solid;
-            border-color: #FFFC00 #000000;
+            border-color: #FFFC00;
+            color:#FFFC00;
         }
         body 
         {
-            background: url("sw.jpg")
-            /*background-size: 100%;*/
-        }
-        .selected {
-            color: blue;
+            background: url("sw.jpg");
         }
     </style>
 </head>
 
 <body>
-
     <div id="root"></div>
 
     <script type="text/javascript" src="react.js"></script>
@@ -32,11 +28,11 @@
         var letters = [{
          'author': 'Yoda',
          'quote': 'When 900 years old, you reach… Look as good, you will not.',
-         'image': 'yoda.png'
+         'image': 'yoda.ico'
        }, {
          'author': 'Senator palpatine',
          'quote': 'The Dark Side of the Force is the pathway to many abilities some consider to be.. Unnatural.',
-         'image': 'emperor-palpatine-icon.svg'
+         'image': 'palpani.png'
        }, {
         'author': 'Count Dooku',
          'quote': 'I sense great fear in you, Skywalker. You have hate… you have anger… but you don’t use them.',
@@ -44,15 +40,15 @@
        }, {
          'author': 'Darth vader',
          'quote': 'Luke, you can destroy the Emperor. He has foreseen this. It is your destiny. Join me, and together we can rule the galaxy as father and son.',
-         'image': 'Darth-Vader-icon.png'
+         'image': 'dark.ico'
        }, {
         'author': 'Princess leila',
          'quote': 'Aren\'t you a little short for a storm trooper?',
-         'image': 'leila.png'
+         'image': 'Leia.png'
        }, {
          'author': 'Yoda',
          'quote': 'Mmm. Lost a planet, Master Obi-Wan has. How embarrassing.',
-         'image': 'yoda.png'
+         'image': 'yoda.ico'
  
        }, {
          'author': 'Qui-Gon Jinn',
@@ -61,26 +57,26 @@
        }, {
          'author': 'Yoda',
          'quote': 'Do. Or do not. There is no try.',
-         'image': 'yoda.png'
+         'image': 'yoda.ico'
  
        }, {
         'author': 'Obi-Wan-Kenobi',
         'quote': 'In my experience there is no such thing as luck.',
-        'image': 'Obi-Wan-Kenobi.png'
+        'image': 'kenobi.png'
        }, {
          'author': 'Yoda',
          'quote': 'If once you start down the dark side, forever will it dominate your destiney, consume you it will, as it did Obi-Wan\'s apprentice',
-        'image': 'yoda.png'
+        'image': 'yoda.ico'
  
        }, {
         'author': 'Darth Vader',
         'quote': 'The Force is strong with this one.',
-        'image': 'Darth-Vader-icon.png'
+        'image': 'dark.ico'
  
        }];
     </script>
     
-    <script type="text/jsx">
+    <script type="text/jsx" >
      var rString = ''
      var Tree =  React.createClass({
          render : function () {
